@@ -25,7 +25,7 @@ schema_view = get_swagger_view(title='MENTOR HACK')
 
 
 urlpatterns = [
-    url(r'^', schema_view),
+    url(r'^docs/', schema_view),
     url(r'^admin/', admin.site.urls),
     url(r'^', include('base.urls')),
 ]
