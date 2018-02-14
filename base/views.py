@@ -24,10 +24,12 @@ class MentorSimilarity(APIView):
         """
         data = request.data
         if 'raw_data' not in data:
-            return Response('user_id address should be in request',
+            return Response('raw_data address should be in request',
                             status=status.HTTP_400_BAD_REQUEST)
 
         mentors = Mentor.objects.all().order_by('?')
         if mentors.count():
-            return Response(data=mentors, status=status.HTTP_200_OK)
+            return Response(
+                data=[MentorSerializer(m).data for m in mentors],
+                status=status.HTTP_200_OK)
         return Response(status=status.HTTP_400_BAD_REQUEST)
