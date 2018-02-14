@@ -1,7 +1,7 @@
 .idea/
 db.sqlite3
 
-
+base/__pycache__/
 # temp files
 *~
 ~$*

@@ -8,6 +8,6 @@ class Mentor(models.Model):
 
     raw_data = JSONField()
     user_id = models.IntegerField(primary_key=True)
-    latent_vector = JSONField()
+    latent_vector = JSONField(default=None)
 
 

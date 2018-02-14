@@ -26,5 +26,5 @@ class MentorSerializer(ModelSerializer):
 
     class Meta:
         model = Mentor
-        fields = ('user_id', 'raw_data', 'latent_vector')
+        fields = ('user_id', 'raw_data')
 
