@@ -1,6 +1,9 @@
 .idea/
 db.sqlite3
 
+base/id2vec_500k.pickle
+base/nbow_500k.pickle
+
 base/__pycache__/
 # temp files
 *~

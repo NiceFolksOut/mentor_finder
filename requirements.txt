@@ -1,3 +1,9 @@
 jsonfield
 djangorestframework
 django-rest-swagger
+seaborn
+pandas
+sklearn
+numpy
+scipy
+vecino
